@@ -8,7 +8,7 @@
 :root{
     --back-color:rgba(19, 19, 19, 0.836);
     --text-color:white;
-    --stroke-color:rgba(255, 255, 255, 0.5);
+    --stroke-color:rgba(255, 255, 255, 0.966);
     --surface-color:rgba(255, 255, 255, 0.05);
     --surface-color-hover:rgba(255, 255, 255, 0.02);
 }
@@ -25,19 +25,27 @@ body *{
     font-family: "Inter", sans-serif;
     color: var(--text-color);
 }
-#container{
-    margin: 56px auto 0px;
-    border:1px solid var(--stroke-color) ;
-    min-width: 360px;
-    max-width: 588px;
+#bordaBotao{
+    border: solid 4px var(--stroke-color);
+    border-radius: 10px;
+    position: fixed;
+    display: flex;
+    z-index: 0;
 }
-#fotoPerfil {
-    text-align: center;
-    padding: 24px;
-}
-#fotoPerfil img {
-    width: 112px;
-    border-radius: 8px;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-}
+.BotaoOpcoes {
+      width: 40px;
+      height: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 5px;
+    }
+
+    .BotaoOpcoes span {
+      height: 4px;
+      width: 100%;
+      background-color: var(--stroke-color);
+      border-radius: 2px;
+      transition: 0.3s;
+    }
