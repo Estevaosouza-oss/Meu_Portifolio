@@ -6,14 +6,19 @@
     list-style: none;
 }
 :root{
-    --bg-url:url(.assets/Backgorund.png);
+    --back-color:rgba(19, 19, 19, 0.836);
     --text-color:white;
     --stroke-color:rgba(255, 255, 255, 0.5);
     --surface-color:rgba(255, 255, 255, 0.05);
     --surface-color-hover:rgba(255, 255, 255, 0.02);
 }
+.light {
+    --back-color:rgba(255, 255, 255, 0.836);
+    --text-color:rgba(0, 0, 0, 0.856);
+    --stroke-color:rgba(0, 0, 0, 0.5);
+}
 body{
-    background: var(--bg-url) no-repeat top center /cover;
+    background: var(--back-color) ;
     height: 100vh;
 }
 body *{
@@ -22,7 +27,7 @@ body *{
 }
 #container{
     margin: 56px auto 0px;
-    border:1px solid white ;
+    border:1px solid var(--stroke-color) ;
     min-width: 360px;
     max-width: 588px;
 }
